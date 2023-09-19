@@ -1,0 +1,3 @@
+# First Post!
+
+This is the first post on my blog. I am just trying to figure out how to connect VS Code and GitHub and all of that. 
