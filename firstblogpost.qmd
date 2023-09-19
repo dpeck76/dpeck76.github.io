@@ -1,8 +1,0 @@
----
-# This is the title for my first blog page
-
- - This is the first bullet point 
-
- - This is the second
- ---
- # Here is the second slide
