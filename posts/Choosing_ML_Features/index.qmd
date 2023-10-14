@@ -1,0 +1,48 @@
+# How to Choose ML Features
+
+There are various factors that can contribute to the decision to choose one feature over another. Here are several of the things to consider as you make your choice of ML features:
+
+ 1. Correlation with the target
+ 2. Suspicion (or Confirmation) that an Interaction Has Correlation with the Target
+ 3. \# Of Missing Values
+ 4. Removing Irrelevant Features Helps
+ 5. Collecting Outside Variables
+ 6. Visualize
+Visualizing the data can help you to understand the relationships between the different 
+
+
+4. Feature Importance Analysis:
+   - Utilize feature importance techniques to determine the importance of each feature in relation to the target variable. This can be done using various methods like:
+     - Correlation analysis: Calculate the correlation between each feature and the target variable.
+     - Feature selection algorithms: Implement algorithms such as Recursive Feature Elimination (RFE), SelectKBest, or LASSO regression.
+     - Tree-based models: Random Forest or Gradient Boosting models provide feature importance scores.
+     - Mutual information or chi-squared tests for classification tasks.
+
+5. Domain Knowledge:
+   - Incorporate domain knowledge. Experts in the field may have insights into which features are most relevant. They can help you identify meaningful features that might not be apparent from the data alone.
+
+6. Remove Redundant Features:
+   - Check for multicollinearity among features (high correlations between features), as redundant features can negatively impact model performance. Remove one of the correlated features.
+
+7. Feature Engineering:
+   - Create new features or transform existing ones to capture additional information. For example, you might convert timestamps into day of the week, extract text features, or create interaction terms.
+
+8. Test Iteratively:
+   - Start with a subset of features and build a baseline model. Gradually add or remove features and assess the impact on model performance using techniques like cross-validation.
+
+9. Dimensionality Reduction:
+   - If you have a large number of features, consider dimensionality reduction techniques like Principal Component Analysis (PCA) or t-Distributed Stochastic Neighbor Embedding (t-SNE).
+
+10. Model Feedback:
+    - Some machine learning models provide insights into feature importance. After training your model, analyze feature importance scores to verify the relevance of features.
+
+11. Regularization:
+    - Regularized models (e.g., Lasso or Ridge regression) automatically perform feature selection by assigning low coefficients to unimportant features. These models can help identify the most relevant features.
+
+12. Experiment and Evaluate:
+    - Experiment with different feature sets and evaluate model performance using metrics like accuracy, precision, recall, F1-score, or mean squared error (depending on your problem).
+
+13. Cross-Validation:
+    - Always use cross-validation to ensure that your feature selection choices generalize well to unseen data.
+
+Remember that feature selection is an iterative process, and the best feature set may vary depending on the specific problem and dataset. It's important to be mindful of overfitting and ensure that your feature selection process is guided by the goals of your machine learning project.
