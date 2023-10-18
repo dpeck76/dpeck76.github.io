@@ -1,10 +1,31 @@
 # How to Choose ML Features
 
+## What is a Feature
+In machine learning, we generally use tabular data, meaning that it is in a table format or in rows and columns. Each row is an observation; each column is an attribute. In machine learning, we train a computer to predict as well as possible (according to whatever metric is chosen as the most important) what one of the column values will be in cases when that value is unknown. The column whose values we are prdicting is called the target; any columns we use to predict the target values are called features. 
+
+#### Example:
+
+I am creating a machine learnign model that will predict whether a person has arrhythmia based on simultaneous EKG (electrocardiogram) readings from several points on the body. One of the most important questions to be answered is this:
+ - What features can we extract from an EKG reading?
+The possible features that come to mind immediately are the following:
+ - Avereage heart rate over the course of the reading
+ - Summary statistics (max, min, mean, variance, median) of the voltage at each given point in time throughout the reading
+ - Summary statistics of the differences in time of consecutive heart beats
+
+## Factors that Contribute to a Feature being better or worse than another
+
 There are various factors that can contribute to the decision to choose one feature over another. Here are several of the things to consider as you make your choice of ML features:
 
  1. Correlation with the target
+   - While you will see throughout this post that this is not the only factor, it is generally the most important factor as far as predictiveness of a model is concerned. 
+   - For example, if you are predicting gender of a student, height would be a very good feature to have, because height correlates strongly with gender. Obviously no one can predict for any given height all of the time what gender that person is, but males are stochastically taller, that is, their heights come from  different distribution than female heights do. 
+   - In my case, I do not know yet what facotrs will correlate most to each heart condition. 
+   - We can tell what correlates with the target much better when we visaulize it on a scatterplot or other more appropriate graphic based on the data type. I will address this further in a separate section on visualization. 
  2. Suspicion (or Confirmation) that an Interaction Has Correlation with the Target
+   - Let's suspend disbelief for a moment and imagine that a group of students in one major has all tall females and short males and the opposite is true for a second major. If we compare the majors based on gender, there will be no correlation. The same is true for height. However, if we look at the interaction, we can gain a lot of insight. We will see that we can determine what major a given student is in (or at least predict with higher accuracy) by using both features together, but not by using either one separately. 
  3. \# Of Missing Values
+   - High missing value counts are not helpful in determining the value of a target variable.
+   - What that specific threshold is 
  4. Removing Irrelevant Features Helps
  5. Collecting Outside Variables
  6. Visualize
