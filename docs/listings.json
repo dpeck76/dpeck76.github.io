@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Choosing_ML_Features/index.html",
       "/posts/My_first_post/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"

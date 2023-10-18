@@ -13,5 +13,9 @@
   },
   "posts/My_first_post/index.qmd": {
     "index.html": "de614344"
+  },
+  "posts/Choosing_ML_Features/index.qmd": {
+    "index.tex": "acb7a706",
+    "index.html": "0fd8c688"
   }
 }
