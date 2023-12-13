@@ -1,0 +1,4 @@
+ - Use more specific examples from my project
+ - Answer the question "What makes a model successful?"
+ - Apply everything more to my data and project
+
